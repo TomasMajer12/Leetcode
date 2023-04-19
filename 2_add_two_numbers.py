@@ -1,7 +1,9 @@
-"""You are given two non-empty linked lists representing two non-negative integers.
+"""
+You are given two non-empty linked lists representing two non-negative integers.
  The digits are stored in reverse order, and each of their nodes contains a single digit. 
  Add the two numbers and return the sum as a linked list.
-You may assume the two numbers do not contain any leading zero, except the number 0 itself."""
+You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+"""
 
 from typing import Optional
 
@@ -19,7 +21,6 @@ class Solution:
             num1 = num1 + l1.val * exp
             exp*=10
             l1 = l1.next
-
         exp = 1
         while l2:
             num2 = num2 + l2.val*exp
