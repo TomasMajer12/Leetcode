@@ -7,9 +7,8 @@ from typing import List
 
 class Solution:
     def getRow(self, rowIndex: int) -> List[int]:
-        if rowIndex == 0:
-            return [1]
-        row = []
+
+        row = [1]
         for i in range(rowIndex):
             newArray = []
             newArray.append(1)
@@ -20,4 +19,4 @@ class Solution:
             row = newArray
         return row
     
-print(Solution().getRow(1))
+print(Solution().getRow(10))
